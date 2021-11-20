@@ -14,8 +14,8 @@
 }
 
 body {
-    display: grid;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-principal);
@@ -46,10 +46,9 @@ h5 {
 
 /* ********************* CABECERA ****************** */
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     width: 100%;
 }
 
@@ -59,18 +58,16 @@ header {
 
 /* ********************* NAV ****************** */
 nav{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    display:grid;
+    grid-template-columns: 1fr;
     margin: 0 auto;
     width: 50%;
 }
 
 .menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     color: var(--color-secundario);
     text-align: center;
     list-style: none;
@@ -94,15 +91,29 @@ a:hover {
 
 /* ********************* SECTION ****************** */
 section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    display: grid;
+    grid-template-rows:10% 80% 20%;
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+    /* ********************* ME QUEDO AQUIIIIIIIIIII ****************** */
+
     color:var(--color-white);
     text-align: center;
 }
 
 .formulario{
+    border: 2px solid white;
     width: 50%;
     margin: 1% auto;
     display: flex;
