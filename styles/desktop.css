@@ -22,7 +22,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-principal);
     min-width: 400px;
-    max-width: 1920px;
 }
 
 h2 {
@@ -35,7 +34,7 @@ h2 {
 }
 h4 {
     margin-top: 6%;
-    font-size: 2.2vw;
+    font-size: 2.4vw;
     font-weight: 300;
     text-align: center;
     color: var(--color-gray);
@@ -50,8 +49,6 @@ h5 {
 
 /* ********************* CABECERA ****************** */
 header {
-    display: grid;
-    grid-template-columns: 1fr;
     justify-items: center;
     width: 100%;
 }
@@ -87,7 +84,7 @@ header {
 
 .lista li a:hover {
     text-decoration: none;
-    color: var(--color-gray);
+    opacity: 0.8;
 }
 
 /* ********************* SECTION ****************** */
@@ -96,14 +93,15 @@ section {
     grid-template-rows:10% 80% 20%;
     color:var(--color-white);
     text-align: center;
+    max-width: 1920px;
 }
 
 .formulario{
+    width: 50%;
     display: grid;
     grid-template-rows: repeat(6, auto);
     justify-items: center;
     align-items: start;
-    width: 50%;
     margin: 1% auto;
 }
 
@@ -161,19 +159,15 @@ section {
     grid-template-rows: repeat(2, 1fr);
     justify-items: end;
     align-items: center;
-    row-gap: 2vh;
-    column-gap: 0.8vw;
+    gap: 2vh 0.8vw;
 }
 .ingredientes > div{
     width: 60%;
-    display: grid;
     justify-items: center;
 }
-
 .ingredientes img{
     width:200%;
 }
-
 .text{
     font-size: 1.5vw;
     font-weight: 100;
@@ -196,7 +190,7 @@ section {
 }
 
 .pedido input:hover {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
         /* ----------- importes ----------- */
@@ -210,46 +204,38 @@ footer{
     width: 100%;
     background-color: var(--color-orange);
 }
-.piee{
+.pie{
     width:100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
 }
-
-.piee div{
+.pie div{
     font-size: 1.2vw;
     font-weight: 300;
     color: var(--color-white);
     padding: 2%;
 }
-
 .redes{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items:end;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
     align-items: center;
 }
-
 .redes a{
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: end;
     text-decoration: none;
     color: var(--color-white);
 }
-
 .redes img{
     width: 1.6vw;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    margin-right: 0.5vw;
 }
-
-.redes a:hover {
+.redes a:hover{
     text-decoration: none;
-    opacity: 0.4;
-    color: var(--color-gray);
+    opacity: 0.6;
 }
 
 

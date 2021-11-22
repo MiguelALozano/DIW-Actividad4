@@ -18,31 +18,29 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-principal);
     min-width: 400px;
-    max-width: 1920px;
 }
 
 h2 {
-    width: 50%;
+    width: 100%;
     margin: 0px auto;
-    font-size: 2.5vw;
-    font-weight: 100;
+    font-size: 7.5vw;
+    font-weight: 200;
     text-align: center;
     color: var(--color-white);
 }
 h4 {
     margin-top: 6%;
-    font-size: 2.2vw;
+    font-size: 6vw;
     font-weight: 300;
     text-align: center;
     color: var(--color-gray);
 }
 h5 {
     margin-top: 1%;
-    font-size: 1.5vw;
+    font-size: 5vw;
     font-weight: 200;
     text-align: Left;
     color: var(--color-white);
@@ -50,44 +48,35 @@ h5 {
 
 /* ********************* CABECERA ****************** */
 header {
-    display: grid;
-    grid-template-columns: 1fr;
     justify-items: center;
     width: 100%;
 }
-
 .img-logo {
-    width: 50%;
+    width: 100%;
 }
 
 /* ********************* NAV ****************** */
 .nav{
-    display:grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    width: 50%;
+    margin: 2vh auto;
 }
-
 .lista{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    align-items: center;
     list-style: none;
-    margin-bottom: 2%;
 }
-
-.lista li a {
-    text-align: center;
-    font-size: 1.5vw;
-    font-weight: 400;
+.lista li a{
+    font-size: 6vw;
+    font-weight: 500;
     text-decoration: none;
     text-align: center;
     color: var(--color-white);
 }
-
 .lista li a:hover {
     text-decoration: none;
-    color: var(--color-gray);
+    opacity: 0.8;
 }
 
 /* ********************* SECTION ****************** */
@@ -99,36 +88,35 @@ section {
 }
 
 .formulario{
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(6, auto);
     justify-items: center;
     align-items: start;
-    width: 50%;
     margin: 1% auto;
 }
 
         /* ----------- inputs ----------- */
 .inputs{
-    width: 60%;
+    width: 85%;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 }
 
 .texto{
-    width:100%;
     margin: 1% auto;
-    font-size: 1.4vw;
+    font-size: 3vw;
     color: var(--color-principal);
 }
 
         /* ----------- seleccion tamaño ----------- */
 .contiene-size{
-    width: 60%;
+    width: 100%;
     margin: 1% auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:3fr 1fr 1fr;
-    font-size: 1.5vw;
+    font-size: 4vw;
     font-weight: 100;
     color: var(--color-white);
 }
@@ -154,28 +142,24 @@ section {
 
         /* ----------- seleccion ingredientes ----------- */
 .ingredientes{
-    width: 60%;
+    width: 100%;
     margin: 1% auto;
     display: grid;
     grid-template-columns: repeat(2, 3fr 2fr 5fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: end;
     align-items: center;
-    row-gap: 2vh;
-    column-gap: 0.8vw;
+    gap: 2vh 0.8vw;
 }
 .ingredientes > div{
-    width: 60%;
-    display: grid;
+    width: 50%;
     justify-items: center;
 }
-
 .ingredientes img{
     width:200%;
 }
-
 .text{
-    font-size: 1.5vw;
+    font-size: 4vw;
     font-weight: 100;
     text-align: left;
     justify-self: start;
@@ -187,7 +171,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    width: 40%;
+    width: 50%;
     margin:5% auto;
 }
 
@@ -196,12 +180,12 @@ section {
 }
 
 .pedido input:hover {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
         /* ----------- importes ----------- */
 .importes{
-    width: 30%;
+    width: 50%;
     margin:0 auto 2% auto;
 }
 
@@ -210,46 +194,36 @@ footer{
     width: 100%;
     background-color: var(--color-orange);
 }
-.piee{
-    width:100%;
+.pie{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items:center;
 }
-
-.piee div{
-    font-size: 1.2vw;
+.pie div{
+    font-size: 3vw;
     font-weight: 300;
     color: var(--color-white);
     padding: 2%;
 }
-
 .redes{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items:end;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
     align-items: center;
 }
-
 .redes a{
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
     text-decoration: none;
     color: var(--color-white);
 }
-
 .redes img{
-    width: 1.6vw;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    margin-right: 0.5vw;
+    width: 2vw;
 }
-
-.redes a:hover {
+.redes a:hover{
     text-decoration: none;
-    opacity: 0.4;
-    color: var(--color-gray);
+    opacity: 0.6;
 }
 
 
